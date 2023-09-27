@@ -1,5 +1,5 @@
-weatherHero
-weatherHero is a weather app 
+weatherrio
+weatherrio is a weather app 
 
 
 

@@ -7,7 +7,7 @@
     <!--
         -primary meta tags
     -->
-    <title>WeatherHero</title>
+    <title>Weatherrio</title>
     <meta name="title" content="weatherHero" />
     <meta name="description" content="weatherHero is a weather app" />
 
@@ -39,5 +39,75 @@
     <script src="./assets/js/app.js" type="module"></script>
     <script src="./assets/js/route.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- 
+      header
+    -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+            width="364"
+            height="58"
+          />
+        </a>
+        <div class="search-view" date-search-view>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search city..."
+              class="search-field"
+              autocomplete="off"
+              date-search-field
+            />
+            <span class="m-icon">search</span>
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search "
+              date-search-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+          <div class="search-result" date-search-result>
+            <ul class="view-list" date-search-list>
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+                <div>
+                  <p class="item-tittle">London</p>
+                  <p class="label-2 item-subtitle">State of London GB</p>
+                </div>
+                <a
+                  href="#"
+                  class="item-link has- state"
+                  date-search-toggler
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button
+            class="icon-btn has-state"
+            aria-label="open Search"
+            date-search-toggler
+          >
+            <span class="m-icon">search</span>
+          </button>
+          <a
+            href="#/current-location"
+            class="btn-primary has-state"
+            date-current-location-btn
+            disabled
+          >
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
